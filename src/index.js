@@ -33,10 +33,15 @@
 // const val3 = "const変数を再宣言";
 
 // constで定義したオブジェクトはプロパティの変更が可能
-const val4 = {
-  name: "ひらの",
-  age: 21
-};
-val4.name = "hirano";
-val4.address = "Kanagawa";
-console.log(val4);
+// const val4 = {
+//   name: "ひらの",
+//   age: 21
+// };
+// val4.name = "hirano";
+// val4.address = "Kanagawa";
+// console.log(val4);
+
+const val5 = ["dog", "cat"];
+val5[0] = "bird";
+val5.push("monkey");
+console.log(val5);
