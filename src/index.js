@@ -23,11 +23,20 @@
 // // letは再宣言不可能
 // let val2 = "let変数を再宣言";
 
-const val3 = "const変数";
-console.log(val3);
+// const val3 = "const変数";
+// console.log(val3);
 
-// const変数は上書き不可能
-val3 = "const変数を上書き";
+// // const変数は上書き不可能
+// val3 = "const変数を上書き";
 
-// const変数は再宣言不可能
-const val3 = "const変数を再宣言";
+// // const変数は再宣言不可能
+// const val3 = "const変数を再宣言";
+
+// constで定義したオブジェクトはプロパティの変更が可能
+const val4 = {
+  name: "ひらの",
+  age: 21
+};
+val4.name = "hirano";
+val4.address = "Kanagawa";
+console.log(val4);
