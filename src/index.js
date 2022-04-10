@@ -41,7 +41,22 @@
 // val4.address = "Kanagawa";
 // console.log(val4);
 
-const val5 = ["dog", "cat"];
-val5[0] = "bird";
-val5.push("monkey");
-console.log(val5);
+// const val5 = ["dog", "cat"];
+// val5[0] = "bird";
+// val5.push("monkey");
+// console.log(val5);
+
+/**
+ * テンプレート文字列
+ */
+const name = "ひらの";
+const age = 21;
+// 「私の名前はひらのです。年齢は21歳です。]
+
+// 従来の方法
+const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+console.log(message1);
+
+// テンプレート文字列を用いた方法
+const message2 = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message2);
