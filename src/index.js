@@ -101,13 +101,19 @@
 // const message2 = `名前は${name}です。年齢は${age}歳です。`;
 // console.log(message2);
 
-const myProfile = ["ひらの", 21];
+// const myProfile = ["ひらの", 21];
 
-// 従来の記述方法(配列)
-const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
-console.log(message3);
+// // 従来の記述方法(配列)
+// const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+// console.log(message3);
 
-// 分割代入を用いた記述方法(配列)
-const [name, age] = myProfile;
-const message4 = `名前は${name}です。年齢は${age}歳です。`;
-console.log(message4);
+// // 分割代入を用いた記述方法(配列)
+// const [name, age] = myProfile;
+// const message4 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(message4);
+
+/**
+ * デフォルト値、引数など
+ */
+const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
+sayHello("ひらの");
