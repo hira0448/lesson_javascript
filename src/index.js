@@ -181,11 +181,24 @@ const nameArr = ["田中", "山田", "ひらの"];
 // console.log(newNumArr);
 
 // 実践的なmapの使用方法('ひらの'以外は語尾に'さん'を付ける)
-const newNameArr = nameArr.map((name) => {
-  if (name === "ひらの") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "ひらの") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
+
+/**
+ * 　三項演算子
+ */
+// ある条件 ? 条件がtrueの時 : 条件がfalseの時;
+const val1 = 1 > 0 ? "trueです" : "falseです";
+console.log(val1);
+
+const num = 1300;
+
+const formattedNum =
+  typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+console.log(formattedNum);
