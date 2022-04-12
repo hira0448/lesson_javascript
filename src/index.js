@@ -203,7 +203,25 @@ const nameArr = ["田中", "山田", "ひらの"];
 //   typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
 // console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100を超えています！！" : "許容範囲内です";
-};
-console.log(checkSum(50, 40));
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています！！" : "許容範囲内です";
+// };
+// console.log(checkSum(50, 40));
+
+/**
+ * 論理演算子の本当の意味を知ろう && ||
+ */
+const flag1 = false;
+const flag2 = true;
+
+if (flag1 || flag2) {
+  console.log("1か2はtrueになります");
+}
+if (flag1 && flag2) {
+  console.log("1も2はtrueになります");
+}
+
+// ||は左側がfalseなら右側を返す
+const num = 100;
+const fee = num || "金額未設定です";
+console.log(fee);
