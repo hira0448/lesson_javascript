@@ -158,11 +158,11 @@
 /**
  * mapやfilterを使用した配列の処理
  */
-// const nameArr = ["田中", "山田", "ひらの"];
+const nameArr = ["田中", "山田", "ひらの"];
 // // for文を使用した従来の例
-// for (let index = 0; index < nameArr.length; index++) {
-//   console.log(nameArr[index]);
-// }
+for (let index = 0; index < nameArr.length; index++) {
+  console.log(`${index + 1}番目は${nameArr[index]}です`);
+}
 
 // // mapを使用した例(returnした結果に基づいて新しい配列を処理)
 // const nameArr2 = nameArr.map((name) => {
@@ -171,11 +171,11 @@
 // console.log(nameArr2);
 
 // // mapを使用した例(配列をループする処理)
-// nameArr.map((name) => console.log(name));
+nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
 
-const numArr = [1, 2, 3, 4, 5];
-// filterを使用した例
-const newNumArr = numArr.filter((num) => {
-  return num % 2 === 1;
-});
-console.log(newNumArr);
+// const numArr = [1, 2, 3, 4, 5];
+// // filterを使用した例
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
