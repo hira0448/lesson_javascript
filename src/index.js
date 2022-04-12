@@ -160,9 +160,9 @@
  */
 const nameArr = ["田中", "山田", "ひらの"];
 // // for文を使用した従来の例
-for (let index = 0; index < nameArr.length; index++) {
-  console.log(`${index + 1}番目は${nameArr[index]}です`);
-}
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index + 1}番目は${nameArr[index]}です`);
+// }
 
 // // mapを使用した例(returnした結果に基づいて新しい配列を処理)
 // const nameArr2 = nameArr.map((name) => {
@@ -171,7 +171,7 @@ for (let index = 0; index < nameArr.length; index++) {
 // console.log(nameArr2);
 
 // // mapを使用した例(配列をループする処理)
-nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
 
 // const numArr = [1, 2, 3, 4, 5];
 // // filterを使用した例
@@ -179,3 +179,13 @@ nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
 //   return num % 2 === 1;
 // });
 // console.log(newNumArr);
+
+// 実践的なmapの使用方法('ひらの'以外は語尾に'さん'を付ける)
+const newNameArr = nameArr.map((name) => {
+  if (name === "ひらの") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(newNameArr);
